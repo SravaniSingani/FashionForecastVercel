@@ -434,7 +434,7 @@ background: linear-gradient(#263536, #020715);
 }
 
 .abour-contentbg {
-    background-image: url(../about.png);
+    background-image: url(../css/img/errorimg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
