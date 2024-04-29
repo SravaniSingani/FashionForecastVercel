@@ -2,6 +2,9 @@
 const express = require("express");
 const path = require("path");
 const axios = require("axios"); 
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 //set up express object and port
 const app = express();
