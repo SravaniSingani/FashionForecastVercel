@@ -64,7 +64,7 @@ app.get("/explore", async(req, res) => {
         const weatherRes = await axios.get("https://api.openweathermap.org/data/2.5/weather", {
             params: {
                 q: city,
-                appId: "d35b1d11c60b5a276a7045189fc87fb3",
+                appId: process.env.WEATHER_API,
                 units: "metric"
             }
         });
@@ -81,7 +81,7 @@ app.get("/explore", async(req, res) => {
 
         const pexelsRes = await axios.get("https://api.pexels.com/v1/search", {
             headers: {
-                Authorization: "ODdcE7sM6zymPeJX1wrLUC8DvoIR4J0bDy2Jm34enE3QIAOC8SB6h2iC"
+                Authorization: process.env.PEXELS_API
             },
             params: {
                 query: keywords.join(", "),
